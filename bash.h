@@ -26,11 +26,13 @@
 int interpreter(void);
 
 // Spawnable child process
-int child_process(void);
+int single_child(char *args[]);
 
 // Get user input
 int get_input(char *args[]);
 
 void handler(int arg);
+
+int pipe_arguments(char *args[]);
 
 #endif
